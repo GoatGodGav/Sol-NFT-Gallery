@@ -6,27 +6,27 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta
-            name="description"
-            content="This site will fly high 🦤"
+            name="Solana NFT Gallery"
+            content="Use this site to view your and others NFTs"
           />
           <link rel="icon" href="/favicon.ico" />
 
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png"
+            href="/robo_eye_woofer.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href="/robo_eye_woofer.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href="/robo_eye_woofer.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
           {/* <meta name="theme-color" content="#ffffff" /> */}
