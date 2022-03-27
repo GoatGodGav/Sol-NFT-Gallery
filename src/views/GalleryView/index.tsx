@@ -10,7 +10,7 @@ import { NftCard } from "./NftCard";
 import styles from "./index.module.css";
 const walletPublicKey = "3EqUrFrjgABCWAnqMYjZ36GcktiwDtFdkNYwY6C6cDzy";
 
-export const GalleryView: FC = ({}) => {
+export const GalleryView: FC = ({ }) => {
   const { connection } = useConnection();
   const [walletToParsePublicKey, setWalletToParsePublicKey] =
     useState<string>(walletPublicKey);
@@ -35,26 +35,20 @@ export const GalleryView: FC = ({}) => {
   };
 
   return (
-    <div className="container mx-auto max-w-6xl p-8 2xl:px-0">
+    <div className="bg-black container mx-auto max-w-6xl p-8 2xl:px-0">
       <div className={styles.container}>
+
         <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
           <div className="flex-none">
             <button className="btn btn-square btn-ghost">
-              <span className="text-4xl">🏞</span>
+              <span className="text-4xl"></span>
             </button>
           </div>
           <div className="flex-1 px-2 mx-2">
-            <div className="text-sm breadcrumbs">
-              <ul className="text-xl">
-                <li>
-                  <Link href="/">
-                    <a>Templates</a>
-                  </Link>
-                </li>
-                <li>
-                  <span className="opacity-40">NFT Gallery</span>
-                </li>
-              </ul>
+            <div className="text-2xl font-bold breadcrumbs">
+
+              <p>Solana NFT Gallery</p>
+
             </div>
           </div>
           <div className="flex-none">
@@ -72,18 +66,7 @@ export const GalleryView: FC = ({}) => {
 
                 <div className="w-full min-w-full">
                   <p className="mb-5">
-                    Here is very basic example of NFT Gallery. It parses
-                    mainnet. <br />
-                    And uses{" "}
-                    <a
-                      href="https://www.npmjs.com/package/@nfteyez/sol-rayz-react"
-                      target="_blank"
-                      className="link font-bold"
-                      rel="noreferrer"
-                    >
-                      @nfteyez/sol-rayz-react
-                    </a>{" "}
-                    package to fetch NFTs for specific wallet.
+                  Sol NFT Galley is a way to view yours and others NFTs
                   </p>
                   <div>
                     <div className="form-control mt-8">
@@ -156,7 +139,7 @@ const NftList = ({ nfts, error }: NftListProps) => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-start">
       {nfts?.map((nft) => (
-        <NftCard key={nft.mint} details={nft} onSelect={() => {}} />
+        <NftCard key={nft.mint} details={nft} onSelect={() => { }} />
       ))}
     </div>
   );
